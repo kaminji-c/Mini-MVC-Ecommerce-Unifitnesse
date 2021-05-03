@@ -44,32 +44,3 @@ foreach($product as $key=>$product): ?>
                      </div>
                      </form>
                  </div>
-
-                 <!--  Add Multiples through Paypal 
-                        <form action = "https://www.sandbox.paypal.com/cgi-bin/webscr" method = "post" target = "paypal">
-                            <input type = "hidden" name = "cmd" value = "_ext-enter" />
-                            <input type = "hidden" name = "redirect_cmd" value = "_xclick" /> 
-                            <input type = "hidden" name = "cancel_return" value = "http://cdelcarmendev.com/testcart" /> 
-                            <input type = "hidden" name = "return" value = "http://cdelcarmendev.com/testcart" /> 
-                            <input type = "hidden" name = "business" value = "camerondelcarmen@gmail.com" /> 
-                            <input type = "hidden" name = "item_name" value = "<?php print $product['name'] ?>" />
-                            <input type = "hidden" name = "amount" value = "<?php print $product['price'] ?>" />
-                            <input type = "hidden" name = "item_number" value = "<?php print $product['qty'] ?>" />
-                            <input type = "hidden" name = "notify_url" value = "http://cdelcarmendev.com/testcart" />
-                            <input type = "hidden" name = "on0_1" value = "size" />
-                                <select name = "os0_1">
-                                    <option value = "">Select a Size</option>
-                                    <option value = "small">Small</option>
-                                    <option value = "medium">Medium</option>
-                                    <option value = "large">Large</option>
-                                </select><br/><br/>
-                        <button type="submit" class="btn btn-dark btn-outline-dark">Buy Now</button>
-                        </form> -->
-                 <!-- View Cart
-                        <form action = "https://www.sandbox.paypal.com/us/cgi-bin/webscr" method = "post" target = "paypal">
-                            <input type = "hidden" name = "cmd" value = "_cart" /> 
-                            <input type = "hidden" name = "business" value = "ksecor@aii.edu" /> 
-                            <input type = "hidden" name = "display" value = "1" /> 
-                            <input type = "image" name = "submit" src = "http://mm214.com/buttons/viewcart.gif" />
-                        </form>
- -->
