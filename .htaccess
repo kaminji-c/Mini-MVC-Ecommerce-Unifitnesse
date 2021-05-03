@@ -1,0 +1,32 @@
+//Create your own clean URLs using the following format. Data comes from your own database
+//Look up htaccess rewrite rules if you need guidance
+
+ErrorDocument 404 index.php
+Options +FollowSymLinks
+RewriteEngine on
+
+//Category 
+RewriteRule ^Clothing$ category.php?ca=1 [L]
+RewriteRule ^GymAccessories$ category.php?ca=2 [L]
+RewriteRule ^Supplements$ category.php?ca=3 [L]
+
+//Products
+RewriteRule ^Relaxed-Fit-Shorts$ product.php?pid=1 [L]
+RewriteRule ^Relaxed-Fit-Joggers$ product.php?pid=2 [L]
+RewriteRule ^Relaxed-Fit-T-shirt$ product.php?pid=3 [L]
+RewriteRule ^Relaxed-Fit-Tank$ product.php?pid=4 [L]
+RewriteRule ^Slim-Fit-Joggers$ product.php?pid=5 [L]
+RewriteRule ^Slim-Fit-Crop$ product.php?pid=6 [L]
+RewriteRule ^Slim-Fit-Print-Tank$ product.php?pid=7 [L]
+RewriteRule ^All-Day-Wear-Jacket$ product.php?pid=8 [L]
+RewriteRule ^All-Day-Wear-Tee$ product.php?pid=9 [L]
+RewriteRule ^All-Day-Wear-Women's-Tank$ product.php?pid=10 [L]
+RewriteRule ^Unisex-Active-Wool-Long-Sleeve$ product.php?pid=11 [L]
+RewriteRule ^Under-Armor-Active-Mask$ product.php?pid=12 [L]
+RewriteRule ^Unisex-Merino-Wool-Thermal$ product.php?pid=13 [L]
+
+RewriteRule ^Orgain-Organic-Protein$ product.php?pid=14 [L]
+RewriteRule ^Vega-Sport®-Premium-Protein$ product.php?pid=15 [L]
+
+RewriteRule ^Resistance-Bands-Set$ product.php?pid=16 [L]
+RewriteRule ^Unifitnesse-Pull-Up-Bands$ product.php?pid=17 [L]
